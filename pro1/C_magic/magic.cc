@@ -3,74 +3,71 @@
 using namespace std;
 
 #define MAX 40010
-enum color {
-	WHITE,
-	BLACK
-};
 
+
+int bufcnt;
 int px[MAX], py[MAX];
 int x_len, y_len;
 
 int area_max, area_min;
-
-int get_area(int x0, int x1, int y0, int y1)
-{
-	return (x1 - x0) * (y1 - y0);
-}
-
-int cut_max(int color, int x0, int x1, int y0, int y1, int n)
-{
-	if (n < 0) {
-		return get_area(x0, x1, y0, y1);
+struct node {
+	int x0, x1, y0, y1, color;
+	node *left, *right;
+	node *alloc(int _x0, int _x1, int _y0, int _y1, int _color) {
+		x0 = _x0, x1 = _x1, y0 = _y0, y1 = _y1, color = _color;
+		left = right = NULL;
+		return this;
 	}
-	if (px[n] < x0 || px[n] > x1 || py[n] < y0 || py[n] > y1) {// out of range
-		return cut_max(color, x0, x1, y0, y1, n-1);
-	}
-
-	int area[2];
-
-	if (color == WHITE) {
-		area[0] = cut_max(BLACK, x0, x1, y0, py[n], n-1);
-		area[1] = cut_max(BLACK, x0, x1, py[n], y1, n-1);
-	} else {
-		area[0] = cut_max(WHITE, x0, px[n], y0, y1, n-1);
-		area[1] = cut_max(WHITE, px[n], x1, y0, y1, n-1);
-	}
-	if (area[0] < area[1]) {
-		return area[1];
-	} else {
-		return area[0];
-	}
-}
-int cut_min(int color, int x0, int x1, int y0, int y1, int n)
-{
-	if (n < 0) {
-		return get_area(x0, x1, y0, y1);
-	}
-	if (px[n] < x0 || px[n] > x1 || py[n] < y0 || py[n] > y1) {// out of range
-		return cut_min(color, x0, x1, y0, y1, n-1);
-	}
-
-	int area[2];
-
-	if (color == WHITE) {
-		area[0] = cut_min(BLACK, x0, x1, y0, py[n], n-1);
-		area[1] = cut_min(BLACK, x0, x1, py[n], y1, n-1);
-	} else {
-		area[0] = cut_min(WHITE, x0, px[n], y0, y1, n-1);
-		area[1] = cut_min(WHITE, px[n], x1, y0, y1, n-1);
-	}
-	if (area[0] || area[1]) {
-		if (area[0] < area[1]) {
-			if (area[0]) return area[0];
-			else return area[1];
-		} else {
-			if (area[1]) return area[1];
-			else return area[0];
+	void cut(node *root, int px[], int py[], int n, node buf[]) {
+		if (n < 0)
+			return;
+		if (py[n] > y0 && py[n] < y1 && px[n] > x0 && px[n] < x1) {
+			if (color == 0) {
+				if (left) {
+					left->cut(root, px, py, n, buf);
+					right->cut(root, px, py, n, buf);
+				} else {
+					left = buf[bufcnt++].alloc(x0, x1, y0, py[n], 1);
+					right = buf[bufcnt++].alloc(x0, x1, py[n], y1, 1);
+					root->cut(root, px, py, n-1, buf);
+				}
+			} else {
+				if (left) {
+					left->cut(root, px, py, n, buf);
+					right->cut(root, px, py, n, buf);
+				} else {
+					left = buf[bufcnt++].alloc(x0, px[n], y0, y1, 0);
+					right = buf[bufcnt++].alloc(px[n], x1, y0, y1, 0);
+					root->cut(root, px, py, n-1, buf);
+				}
+			}
 		}
 	}
-	return 40000*40000;
-}
+	void get_area(void) {
+		int area;
+		if (!left) {
+			area = (x1 - x0) * (y1 - y0);
+			if (area < area_min) area_min = area;
+			if (area > area_max) area_max = area;
+		} else {
+			left->get_area();
+			right->get_area();
+		}
+	}
+#if 0
+	void traverse(void) {
+		cout << x0 << x1 << y0 << y1 << color << endl;
+		if (left)
+			left->traverse();
+		if (right)
+			right->traverse();
+	}
+#endif
+} *root, buf[MAX];
+
+
+
+
 
 int main()
 {
@@ -82,7 +79,9 @@ int main()
 	for (int i = N-1; i >= 0; --i) {
 		scanf("%d %d", &px[i], &py[i]);
 	}
-	area_max = cut_max(WHITE, 0, x_len, 0, y_len, N-1);
-	area_min = cut_min(WHITE, 0, x_len, 0, y_len, N-1);
+	root = buf[bufcnt++].alloc(0, x_len, 0, y_len, 0);
+	root->cut(root, px, py, N-1, buf);
+	//root->traverse();
+	root->get_area();
 	cout << area_max << " " << area_min << endl;
 }
