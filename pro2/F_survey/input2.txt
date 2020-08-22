@@ -1,0 +1,113 @@
+3
+29
+3 7 2 xggbwkf mwcysyycqp
+3 9 3 lfdxfircvs mwcysyycqp ggxrpnrvys
+3 6 4 ggxrpnrvys srtkjpre lfdxfircvs xggbwkf
+3 10 3 hqghumeayl lfdxfircvs srtkjpre
+3 1 3 hqghumeayl lfdxfircvs ggxrpnrvys
+5 mwcysyycqp
+2 xggbwkf mwcysyycqp 1
+5 xggbwkf
+2 lfdxfircvs ggxrpnrvys 2
+4 9
+3 8 1 hqghumeayl
+6 xggbwkf
+5 srtkjpre
+5 xggbwkf
+5 lfdxfircvs
+3 9 4 lfdxfircvs xggbwkf hqghumeayl srtkjpre
+4 7
+0 srtkjpre 0
+3 4 1 srtkjpre
+0 hqghumeayl 1
+3 5 2 srenzkycx nimkkasv
+2 srenzkycx nimkkasv 1
+3 7 1 vikeffm
+6 lfdxfircvs
+0 vikeffm 1
+3 3 4 vikeffm lfdxfircvs hqghumeayl qduxwfnfoz
+4 3
+6 mwcysyycqp
+0 qduxwfnfoz 0
+30
+3 4 3 wvacsfj zjglw mopxx
+3 3 4 umrlv zvabxvs zjglw ixseay
+3 10 2 gcatis mopxx
+3 9 1 qxoezrfbn
+3 7 4 zjplyf zjglw zvabxvs gcatis
+1 wvacsfj zjglw 1
+3 5 2 hvjnkqg wvacsfj
+5 mopxx
+4 4
+2 mopxx umrlv 1
+1 zvabxvs ixseay 1
+2 gcatis qxoezrfbn 2
+0 zjplyf 1
+5 gcatis
+3 1 4 qxoezrfbn gcatis ixseay wvacsfj
+4 7
+3 2 3 wvacsfj mopxx zvabxvs
+5 umrlv
+3 4 4 ixseay gcatis hvjnkqg wvacsfj
+5 zjplyf
+3 6 4 wvacsfj umrlv hvjnkqg zjglw
+3 8 3 zvabxvs zjglw wvacsfj
+3 7 3 gcatis qxoezrfbn ixseay
+4 1
+3 1 2 mopxx wvacsfj
+4 6
+3 6 2 ixseay wvacsfj
+5 zjglw
+6 umrlv
+0 hvjnkqg 1
+50
+3 26 4 zavhslays ijlutb teknummorg vqkshnekrd
+3 18 1 xbictirhl
+3 7 2 cnkwqnft srppl
+3 11 3 vqkshnekrd hkzmlfntq zavhslays
+3 29 2 vqkshnekrd teknummorg
+3 16 2 ijlutb derjakgizh
+3 1 4 srppl hkzmlfntq derjakgizh zavhslays
+3 19 1 ijlutb
+3 28 1 teknummorg
+3 24 1 zavhslays
+3 23 2 cnkwqnft hkzmlfntq
+3 13 4 xbictirhl teknummorg ijlutb zavhslays
+3 27 1 srppl
+3 25 2 xbictirhl ijlutb
+3 22 2 teknummorg cnkwqnft
+2 zavhslays ijlutb 8
+1 teknummorg vqkshnekrd 2
+1 xbictirhl cnkwqnft 0
+0 srppl 3
+0 hkzmlfntq 3
+4 29
+3 17 1 zavhslays
+4 26
+3 5 3 xbictirhl zavhslays teknummorg
+5 xbictirhl
+4 1
+3 14 4 derjakgizh teknummorg vqkshnekrd hkzmlfntq
+3 15 1 cnkwqnft
+3 4 2 vqkshnekrd teknummorg
+4 13
+3 12 1 ijlutb
+4 19
+4 15
+5 zavhslays
+3 3 1 derjakgizh
+5 derjakgizh
+3 21 2 ijlutb pjjww
+4 14
+0 derjakgizh 0
+4 11
+3 20 1 srppl
+4 27
+3 14 4 xbictirhl zavhslays srppl derjakgizh
+4 14
+3 15 3 zavhslays ijlutb pjjww
+3 13 2 srppl xbictirhl
+4 13
+5 srppl
+3 14 4 xbictirhl cnkwqnft teknummorg pjjww
+0 pjjww 1

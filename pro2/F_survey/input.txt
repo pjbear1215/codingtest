@@ -1,0 +1,38 @@
+2
+15
+3 17 3 hqghumeayl lfdxfircvs xggbwkf
+3 3 3 lfdxfircvs xggbwkf hqghumeayl
+0 lfdxfircvs 2
+3 12 4 lfdxfircvs vikeffm qduxwfnfoz xggbwkf
+3 1 4 nimkkasv xggbwkf lfdxfircvs hqghumeayl
+0 xggbwkf 4
+2 hqghumeayl qduxwfnfoz 4
+0 vikeffm 1
+2 ggxrpnrvy hqghumeay 0
+3 4 3 qduxwfnfoz nimkkasv srenzkycx
+3 6 4 lfdxfircvs mwcysyycqp srtkjpre srenzkycx
+3 16 2 nimkkasv qduxwfnfoz
+3 14 2 qduxwfnfoz srtkjpre
+1 nimkkasv srenzkycx 1
+1 mwcysyycqp srtkjpre 1
+20
+1 nimkv srenzkycx 0
+3 7 2 xggbwkf mwcysyycqp
+3 9 3 lfdxfircvs mwcysyycqp ggxrpnrvys
+3 2 2 ggxrpnrvys nimkv
+0 mwcysyycqp 2
+3 6 4 ggxrpnrvys srtkjpre lfdxfircvs xggbwkf
+3 10 3 hqghumeayl lfdxfircvs srtkjpre
+4 2
+3 1 3 hqghumeayl vikeffm lfdxfircvs
+3 8 4 vikeffm qduxwfnfoz ggxrpnrvys srenzkycx
+2 srtkjpre ggxrpnrvys 4
+3 5 2 nimkkasv lfdxfircvs
+3 4 1 xggbwkf
+3 3 3 mwcysyycqp hqghumeayl qduxwfnfoz
+1 hqghumeayl lfdxfircvs 2
+2 xggbwkf qduxwfnfoz 5
+5 lfdxfircvs
+0 vikeffm 1
+6 lfdxfircvs
+0 nimkkasv 1
